@@ -15,19 +15,26 @@
     <div class="form-row">
         <div class="col">
             <label for="rangeMin">Range Min:</label>
-            <input id="rangeMin" type="number" value=-1 class="form-control">
+            <input id="rangeMin" type="number" value="-1" step="0.001" class="form-control">
         </div>
         <div class="col">
             <label for="rangeMax">Range Max:</label>
-            <input id="rangeMax" type="number" value=1 class="form-control">
+            <input id="rangeMax" type="number" value="1" step="0.001" class="form-control">
         </div>
         <div class="col">
             <label for="domMin">Domain Min:</label>
-            <input id="domMin" type="number" value=0 class="form-control">
+            <input id="domMin" type="number" value="0" step="0.001" class="form-control">
         </div>
         <div class="col">
             <label for="domMax">Domain Max:</label>
-            <input id="domMax" type="number" value="6.282" class="form-control">
+            <input id="domMax" type="number" value="6.282" step="0.001" class="form-control">
+        </div>
+        <div class="col">
+            <label for="accuracy">Accuracy:</label>
+            <input type="text" id="accuracy" min=2 value=10 class="form-control">
+        </div>
+        <div class="col">
+            <a href="#" class="btn btn-success" onclick="drawFunction()">Generate Function</a>
         </div>
     </div>
 </div>
